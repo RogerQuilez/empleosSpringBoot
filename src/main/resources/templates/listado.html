@@ -1,0 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML xmlns:th="http://www.thymeleaf.org">
+   <HEAD>
+      <TITLE>Listado de Ofertas de Trabajo</TITLE>
+   </HEAD>
+   <BODY>
+   	<h1>Vacantes Disponibles</h1>
+   	<ol>
+   		<li th:each="empleo: ${empleos}" th:text="${empleo}"/>
+   	</ol>
+   </BODY>
+</HTML>
